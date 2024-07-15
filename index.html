@@ -15,32 +15,194 @@
 </head>
 
 <body>
-    <header>
+    <header id="cabecalho">
         <div class="container">
             <div class="navbar navbar-expand-lg ">
                 <a href="#" class="navbar-brand text-light fw-bold">MP.com</a>
-                <button type="button" class="navbar-toggler navbar-dark" data-bs-toggle="collapse" data-bs-target="#menu">
+                <button type="button" class="navbar-toggler navbar-dark" data-bs-toggle="collapse"
+                    data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav id="menu" class="collapse navbar-collapse justify-content-end">
                     <ul class="navbar-nav navbar-dark ">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Home</a>
+                            <a href="#section-inicio" class="nav-link active">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">Lugares</a>
+                            <a href="#section-lugares" class="nav-link ">Lugares</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">Sobre</a>
+                            <a href="#section-sobre" class="nav-link ">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">Contatos</a>
+                            <a href="#section-form" class="nav-link ">Contato</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <main data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="section-inicio">
+            <div id="main-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#main-carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <a href="#" class="carousel-item active" data-bs-interval="2000">
+                        <img class="d-block w-100" src="./assets/images/amazônia.jpg"
+                            alt="Imagem de um rio na Floresta Amazônica">
+                        <div class="carousel-caption">
+                            <h2 class="rounded">Amazônia</h2>
+                        </div>
+                    </a>
+                    <a href="#" class="carousel-item" data-bs-interval="2000">
+                        <img class="d-block w-100" src="./assets/images/riodejaneiro.jpg"
+                            alt="Imagem do pão de açucar no Rio de Janeiro">
+                        <div class="carousel-caption">
+                            <h2 class="rounded">Rio de Janeiro</h2>
+                        </div>
+                    </a>
+                    <a href="#" class="carousel-item" data-bs-interval="2000">
+                        <img class="d-block w-100" src="./assets/images/bahia.jpg" alt="Praia na Bahia">
+                        <div class="carousel-caption">
+                            <h2 class="rounded">Bahia</h2>
+                        </div>
+                    </a>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#main-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        <section id="section-lugares">
+            <div id="container-lugares" class="container mt-4">
+                <h1 class="title mb-4">Lugares</h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-3">
+                        <div class="card text-bg-dark border-0">
+                            <img class="card-img"
+                                src="https://cdn.pixabay.com/photo/2015/12/01/20/28/green-1072824_640.jpg"
+                                alt="Parque com trilhas">
+                            <div class="card-img-overlay">
+                                <h3 class="card-tile">Parques</h3>
+                                <p class="card-text">Conheça parques incríveis e perfeitos para trilhas e atividades ao
+                                    ar livre.</p>
+                                <a class="card-link btn btn-sm btn-info text-light">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card text-bg-dark border-0">
+                            <img class="card-img"
+                                src="https://cdn.pixabay.com/photo/2019/09/17/20/47/prague-4484517_640.jpg"
+                                alt="Girafa">
+                            <div class="card-img-overlay">
+                                <h3 class="card-tile">Safaris</h3>
+                                <p class="card-text">Conheça diversos animais em safaris e zoológicos pelo planeta.</p>
+                                <a class="card-link btn btn-sm btn-info text-light">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card text-bg-dark border-0">
+                            <img class="card-img"
+                                src="https://cdn.pixabay.com/photo/2022/05/22/18/25/spain-7214284_640.jpg"
+                                alt="Pequena cidade">
+                            <div class="card-img-overlay">
+                                <h3 class="card-tile">Cidades turísticas</h3>
+                                <p class="card-text">Conheça cidades charmosas e aproveite a cultura local conhecendo a
+                                    arte, a culinária e o entretenimento.</p>
+                                <a class="card-link btn btn-sm btn-info text-light">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card text-bg-dark border-0">
+                            <img class="card-img"
+                                src="https://img.freepik.com/fotos-gratis/cachoeira-cascada-de-texolo-em-xico-mexico_181624-20415.jpg?t=st=1721054293~exp=1721057893~hmac=5f2c462fb9fe96b0df3280a6afc065e073b54502e695767cd0bc458c62ca1e73&w=360"
+                                alt="Cachoeira">
+                            <div class="card-img-overlay">
+                                <h3 class="card-tile">Cachoeiras</h3>
+                                <p class="card-text">Conheça lindas cachoeira para poder se refrescar e renovar suas
+                                    energias.</p>
+                                <a class="card-link btn btn-sm btn-info text-light">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card text-bg-dark border-0">
+                            <img class="card-img"
+                                src="https://img.freepik.com/fotos-gratis/casa-maldives-mar-viagens-exoticas_1203-5358.jpg?t=st=1721054245~exp=1721057845~hmac=49d0bb4d8a5fb1200a597b6d70f004cedeae2c04cf4974271f3f7d5c38bfebb0&w=740"
+                                alt="Praia">
+                            <div class="card-img-overlay">
+                                <h3 class="card-tile">Praias</h3>
+                                <p class="card-text">Conheça praias incriveis e paradisíacas</p>
+                                <a class="card-link btn btn-sm btn-info text-light">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card text-bg-dark border-0">
+                            <img class="card-img"
+                                src="https://img.freepik.com/fotos-gratis/tiro-de-angulo-baixo-do-famoso-coliseu-em-roma-italia-sob-o-ceu-brilhante_181624-7244.jpg?t=st=1721054205~exp=1721057805~hmac=0b7a0a714311a0d03f54acc471610345c073ffc1f7dccaa8f860abaa329a6fbf&w=740"
+                                alt="Monumento">
+                            <div class="card-img-overlay">
+                                <h3 class="card-tile">Monumentos</h3>
+                                <p class="card-text">Conheça monumentos históricos e viage no tempo.</p>
+                                <a class="card-link btn btn-sm btn-info text-light">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-sobre" class="flex-column d-flex justify-content-center">
+            <div class="container p-3 rounded ">
+                <h1>MelhoresPasseios.com</h1>
+                <h4 class="text-light w-75">Confira as melhores dicas de passeios para você e toda sua família, saiba os
+                    melhores preços de <span>hotéis, passagens e entradas de pontos turísticos bem como as principais
+                        informações da região.</span> Tudo isso de forma prática e <span>GRATUITA</span> aqui no
+                    <span>MelhoresPasseios.com.</span>
+                </h4>
+            </div>
+        </section>
+        <section id="section-form">
+            <div class="container p-3 mt-4 d-flex flex-column justify-content-start">
+                <h1 class="title mb-3">Entre em contato:</h1>
+                <div class="container">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Digite seu nome:</label>
+                            <input class="form-control" type="text" name="nome" id="nome_id">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Digite seu email:</label>
+                            <input class="form-control" type="email" name="email" id="email_id">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Digite sua mensagem:</label>
+                            <textarea class="form-control" type="text" name="mensagem" id="mensagem_id"></textarea>
+                        </div>
+                        <input class="btn btn-success w-50" type="button" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-secondary">
+        <div class="container p-3 d-flex flex-column align-items-center">
+            <p class="mb-0 text-light">Produced by <a class="text-light fw-bold "
+                    href="https://www.linkedin.com/in/guilherme-luz-rocha-3a1511234/">Guilherme Luz</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -5,10 +5,74 @@ body {
 }
 
 header {
-    background: #8ce099;
-    backdrop-filter: blur(2.5px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #77da86d2;
+    backdrop-filter: blur(5px);
 }
 
-.navbar-nav .nav-item{
+.navbar-nav .nav-item {
     text-align: center;
+}
+
+.carousel-inner .carousel-item {
+    height: 500px;
+}
+
+.carousel-inner .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption h2 {
+    background-color: rgba(0, 0, 0, .3);
+
+}
+
+#container-lugares {
+    padding: 10px;
+}
+
+.title {
+    color: #65c4bc;
+}
+
+.card {
+    height: 300px;
+}
+
+.card-img-overlay {
+    background-color: rgb(0, 0, 0, .4);
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#section-sobre {
+    height: 500px;
+    width: 100%;
+    background-image: url("./assets/images/estrada.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section-sobre div {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#section-sobre div h1 {
+    color: #FFF18C;
+}
+
+#section-sobre div span {
+    color: #65c4bc;
+    font-weight: bold;
 }
