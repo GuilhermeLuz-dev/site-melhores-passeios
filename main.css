@@ -14,6 +14,11 @@ header {
     backdrop-filter: blur(5px);
 }
 
+.navbar-brand img{
+    width: 30px;
+    margin-right: 5px;
+}
+
 .navbar-nav .nav-item {
     text-align: center;
 }
